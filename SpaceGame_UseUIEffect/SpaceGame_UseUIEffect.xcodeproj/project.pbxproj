@@ -34,6 +34,8 @@
 		0437D5411877BC920051189F /* UIEffectDesignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437D5401877BC920051189F /* UIEffectDesignerView.m */; };
 		0437D5441877BCB40051189F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437D5431877BCB40051189F /* NSData+Base64.m */; };
 		0437D5461877C3D20051189F /* myStars.ped in Resources */ = {isa = PBXBuildFile; fileRef = 0437D5451877C3D20051189F /* myStars.ped */; };
+		F3FB05A318BF0F4C002F7364 /* UIEffectDesigner.app in Resources */ = {isa = PBXBuildFile; fileRef = F3FB05A218BF0F4C002F7364 /* UIEffectDesigner.app */; };
+		F3FB05A518BF1BDF002F7364 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F3FB05A418BF1BDF002F7364 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		0437D5421877BCB30051189F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		0437D5431877BCB40051189F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		0437D5451877C3D20051189F /* myStars.ped */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myStars.ped; sourceTree = "<group>"; };
+		F3FB05A218BF0F4C002F7364 /* UIEffectDesigner.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = UIEffectDesigner.app; sourceTree = "<group>"; };
+		F3FB05A418BF1BDF002F7364 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 		0437D4AF1877BBBE0051189F = {
 			isa = PBXGroup;
 			children = (
+				F3FB05A418BF1BDF002F7364 /* README.md */,
+				F3FB05A218BF0F4C002F7364 /* UIEffectDesigner.app */,
 				0401C0FE187ADD1D00868F94 /* QuartzCore.framework */,
 				0437D4C11877BBBE0051189F /* SpaceGame_UseUIEffect */,
 				0437D4E51877BBBE0051189F /* SpaceGame_UseUIEffectTests */,
@@ -277,6 +283,7 @@
 				0437D4CE1877BBBE0051189F /* Default.png in Resources */,
 				0437D4D01877BBBE0051189F /* Default@2x.png in Resources */,
 				0437D4D21877BBBE0051189F /* Default-568h@2x.png in Resources */,
+				F3FB05A518BF1BDF002F7364 /* README.md in Resources */,
 				0437D4D81877BBBE0051189F /* ViewController.xib in Resources */,
 				0437D4FA1877BBDC0051189F /* btnBoost.png in Resources */,
 				0437D4FB1877BBDC0051189F /* btnDown.png in Resources */,
@@ -284,6 +291,7 @@
 				0437D4FD1877BBDC0051189F /* rocket.png in Resources */,
 				0437D5021877BBF50051189F /* myBoosterfire.ped in Resources */,
 				0437D5461877C3D20051189F /* myStars.ped in Resources */,
+				F3FB05A318BF0F4C002F7364 /* UIEffectDesigner.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +407,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -423,7 +431,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
