@@ -17,7 +17,7 @@
 @property(assign,nonatomic)    CGPoint     boostingRocketCenter ;
 @property(assign,nonatomic)    CGPoint     originalRocketCenter ;
 @property(assign,nonatomic)    BOOL        isMoving;
-
+@property(assign,nonatomic)    int         xMovingDelta,yMovingDelta;
 @end
 
 @implementation ViewController
@@ -52,18 +52,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)controllRelease:(id)sender
+- (IBAction)controllRelease:(UIButton*)sender
 {
     
+    self.isMoving = NO;
+    
+    if (sender.tag==1) _xMovingDelta = 0;
+    if (sender.tag==2) _xMovingDelta = 0;
+    if (sender.tag==3) _yMovingDelta = 0;
+    if (sender.tag==4) _yMovingDelta = 0;
     
 }
 
-- (IBAction)controllPressesd:(id)sender
+- (IBAction)controllPressesd:(UIButton*)sender
 {
+    //set the flag to "moving"
+    self.isMoving = YES;
     
+    //adjust the direction according to the button's tag
+    if (sender.tag==1) _xMovingDelta = -4;
+    if (sender.tag==2) _xMovingDelta = 4;
+    if (sender.tag==3) _yMovingDelta = -4;
+    if (sender.tag==4) _yMovingDelta = 4;
+    
+    //start the tick function to move the ship around
+    [self tick];
     
 }
 
+-(void)tick
+{
+    self.rocketImg.center = CGPointMake(self.rocketImg.center.x+_yMovingDelta, self.rocketImg.center.y+_xMovingDelta);
+    
+   
+    
+    if (self.isMoving) {
+        [self performSelector:@selector(tick) withObject:nil afterDelay:0.02];
+    }
+}
 - (IBAction)boostRelease:(id)sender {
     
    
